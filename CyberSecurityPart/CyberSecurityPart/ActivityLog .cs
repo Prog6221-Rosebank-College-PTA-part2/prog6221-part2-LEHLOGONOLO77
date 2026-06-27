@@ -4,9 +4,9 @@ using System.Linq;
 
 namespace CyberSecurityAwarenessBot
 {
-    /// <summary>
+    
     /// Singleton activity log. Records every significant chatbot action with a timestamp.
-    /// </summary>
+    >
     public sealed class ActivityLog
     {
         private static readonly ActivityLog _instance = new();
@@ -16,7 +16,7 @@ namespace CyberSecurityAwarenessBot
 
         private ActivityLog() { }
 
-        // ── Public API ──────────────────────────────────────────────────────
+        //Public API
 
         public void Add(string description)
         {
@@ -51,5 +51,5 @@ namespace CyberSecurityAwarenessBot
         }
     }
 
-    public record LogEntry(DateTime Timestamp, string Description);
+     public record LogEntry(DateTime Timestamp, string Description);
 }
